@@ -25,7 +25,7 @@ public class SCE_Improved {
 
         try {
             // Costruzione del comando in modo sicuro (compatibile con Windows)
-            String[] command = {"ping", "-n", "4", userInput};
+            String[] command = {"ping", "-c", "4", userInput};
             Process process = new ProcessBuilder(command).start();
 
             // Lettura dell'output del comando
