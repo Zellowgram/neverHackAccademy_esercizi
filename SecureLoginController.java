@@ -17,6 +17,9 @@ public class SecureLoginController {
 
             // Query SQL costruita in modo insicuro
             String query = "SELECT * FROM users WHERE username = ? AND password = ?";
+            // Imposta i parametri
+            pstmt.setString(1, username); // Imposta il primo parametro (username)
+            pstmt.setString(2, password); // Imposta il secondo parametro (password)
                 
             rs = pstmt.executeQuery(query);
 
