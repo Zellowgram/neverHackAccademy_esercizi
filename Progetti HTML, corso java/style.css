@@ -1,0 +1,61 @@
+#mainBox{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51, 48, 48);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px 20px 20px 20px;
+    border: 3px solid rgb(208, 208, 208)
+}
+
+#side-bar{
+    width: 33%;
+}
+
+#side-bar img{
+    width: 50px;
+    height: auto;
+    padding: 15px;
+}
+
+#side-bar li {
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    
+}
+
+#right-bar{
+    display: grid;
+    width: 66%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border: 3px solid rgb(208, 208, 208);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px
+}
+
+#right-bar.row-1{
+    grid-column: 1/-1;
+}
+
+#right-bar.row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
+    gap: 10px;
+}
+
+#right-bar .row-3 {
+    display: grid; /* La terza riga ha 4 colonne */
+    grid-template-columns: repeat(4, 1fr); /* Divisione in 4 colonne uguali */
+    gap: 10px;
+}
+
+
+
